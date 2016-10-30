@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 1.B</title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<h1>Форма за пријавување на X-Factor</h1>
+<form name="Form" method="post" onsubmit="return validateForm()" action="">
+    <table width="500px">
+        <tr>
+            <td valign="top">
+                <label>Име</label>
+            </td>
+            <td valign="top">
+                <input type="text" name="name" maxlength="50" size="30">
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top">
+            <label>Уметинчко име</label>
+            </td>
+            <td valign="top">
+                <input type="text" name="nickName" maxlength="50" size="30">
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top">
+                <label>Пол</label>
+            </td>
+            <td valign="top">
+                <input type="radio" name="gender" value="Машки" checked>Машки
+                <input type="radio" name="gender" value="Женски">Женски<br>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top">
+                <label>Жарн</label>
+            </td>
+            <td valign="top">
+                <select name="genre" id="select">
+                    <option value="classical">Classical Music</option>
+                    <option value="rock">Rock Music</option>
+                    <option value="electronic">Electronic Music</option>
+                    <option value="pop">Pop Music</option>
+                    <option value="metal">Metal Music</option>
+                    <option value="hipHop">Hip Hop Music</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="Пријави се">
+            </td>
+        </tr>
+    </table>
+</form>
+<script type="text/javascript">
+    function validateForm()
+    {
+        var name = document.forms["Form"]["name"].value;
+        var nickName = document.forms["Form"]["nickName"].value;
+        var g = document.getElementById("select");
+        var genre = g.options[g.selectedIndex].text;
+        var gender = document.forms["Form"]["gender"].value;
+
+        if (name == null || name == "" || nickName == null || nickName == "") {
+            alert("Сите полиња се задолжителни");
+            return false;
+        } else {
+            alert(name + ", " + nickName + ", " + gender + ", " + genre + " - успешно се пријавивте");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 1.A</title>
+</head>
+<body>
+<h1 id="time"></h1>
+<script>
+    function calculateTime()
+    {
+        var dateNow = new Date();
+        var hoursleft = 23-dateNow.getHours();
+        var minutesleft = 59-dateNow.getMinutes();
+        var secondsleft = 59-dateNow.getSeconds();
+
+        if (hoursleft < 10) hoursleft = "0" + hoursleft;
+        if (minutesleft < 10) minutesleft = "0" + minutesleft;
+        if (secondsleft < 10) secondsleft = "0" + secondsleft;
+
+        document.getElementById("time").innerHTML = hoursleft + ":" + minutesleft + ":" + secondsleft;
+    }
+    calculateTime();
+    setInterval(calculateTime, 1000);
+</script>
+</body>
+</html>

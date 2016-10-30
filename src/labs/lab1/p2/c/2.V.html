@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 2.V</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style>
+        .Menu {
+            background-color:lightblue;
+            width: 31%;
+        }
+    </style>
+</head>
+<body>
+<div class="Menu">
+    <h1><i>Големина на фонт:</i></h1>
+    <button type="button" id="button1">Почетна</button>
+    <button type="button" id="button2">Зголеми</button>
+    <button type="button" id="button3">Намали</button>
+</div>
+<div id="text">
+    <h1 style="margin-bottom: 0px">How to connect to the internet</h1>
+    <p  style="margin-top: 5px">To connect to the Internet, you'll need an Internet service provider (ISP) and some hardware: ISP. An ISP is a company
+        that gives youaccess to the Internet. You sign up for an account with an ISP just as you do for telephone service or utilities.
+        ISPs are usually phone companies (for a DSL or fiber optic connection) or TV providers (for a cable or satellite connection).
+        <br> <br>
+        Hardware. For a broadband connection, such as DSL, fiber optic, or cable, you'll need a broadband modem. This might be
+        included as part of the start-up hardware from yout ISP when you sign up for a broadband account. If you plan to share
+        Internet access with multiple PCs by using a home network, you'll also need a router</p>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#button1').click(function () {
+            $('#text').animate({fontSize:starter +"px"});
+        });
+        $('#button2').click(function () {
+            var size = parseInt($('#text').css('fontSize')) * 1.5;
+            $('#text').animate({fontSize:size +"px"});
+        });
+        $('#button3').click(function () {
+            var size = parseInt($('#text').css('fontSize')) / 1.5;

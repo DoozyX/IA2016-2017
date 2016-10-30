@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Problem 2.G</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style type="text/css">
+        table {
+            border: 1px solid black;
+        }
+        table th {
+            background: #f4427d;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Име</th>
+        <th>Презиме</th>
+        <th>Состојба</th>
+    </tr>
+    <tr>
+        <td>Петко</td>
+        <td>Петков</td>
+        <td>Задоволува</td>
+    </tr>
+    <tr>
+        <td>Петко</td>
+        <td>Петков</td>
+        <td>Незадоволува</td>
+    </tr>
+    <tr>
+        <td>Петко</td>
+        <td>Петков</td>
+        <td>Незадоволува</td>
+    </tr>
+    <tr>
+        <td>Петко</td>
+        <td>Петков</td>
+        <td>Незадоволува</td>
+    </tr>
+    <tr>
+        <td>Петко</td>
+        <td>Петков</td>
+        <td>Задоволува</td>
+    </tr>
+    <tr>
+        <td>Петко</td>
+        <td>Петков</td>
+        <td>Задоволува</td>
+    </tr>
+</table>
+<button id="but">Провери долг</button>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("td:contains('Задоволува')").parent().css('background','#26ff16');
+        });
+    });
+</script>
+</body>
+</html>
