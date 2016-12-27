@@ -1,0 +1,41 @@
+#container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    text-align: center;
+}
+
+#nav {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+#nav li {
+    float: left;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+footer {
+    border-top: 2px solid green;
+    padding-top: 10px;
+}
+
+.footerPanel {
+    width: 300px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.footerPanel h2 {
+    border: 1px dotted black;
+}
+

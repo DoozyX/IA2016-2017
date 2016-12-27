@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Прва задача</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+<div id="dialog-form" title="Set your password  ">
+    <form>
+        <fieldset>
+            <p class="error">Passwords error!</p>
+            <label for="password">New Password:</label><br>
+            <input type="text" name="password" id="password" class="text ui-widget-content ui-corner-all"/>
+
+            <label for="repeatPW">Repeat Password:</label><br>
+            <input type="text" name="repeatPW" id="repeatPW" class="text ui-widget-content ui-corner-all"/>
+        </fieldset>
+    </form>
+</div>
+<div class="container">
+    <div class="wizard_tab" id="compose_message">
+        <h1><b>New message:</b></h1>
+        <span>To:</span> <input type="text" name="to" id="to"/>
+        <span>Cc:</span> <input type="text" name="cc" id="cc"/>
+        <span>Subject:</span> <input type="text" name="subject" id="subject"/>
+        <span>Content:</span><span class="content"></span>
+        <button class="button" id="insert2">Insert</button>
+        <button class="button" id="send">Send</button>
+    </div>
+</div>
+<div id="dialog-insert" title="Message Content">
+    <div class="wizard_tab" id="contentMessage">
+        <span>To:</span> <span id="toContent"></span><br>
+        <span>Subject:</span> <span id="subjectContent"></span><br>
+        <span>Cc:</span> <span id="ccContent"></span><br><br>
+        <label for="description">Content</label><br>
+        <textarea rows="8" cols="40" id="description"></textarea><br>
+        <button id="insert">Insert</button>
+        <button id="clear">Clear</button>
+    </div>
+</div>
+<div id="dialog-password" title="Password">
+    <div class="wizard_tab" id="contentPassword">
+        <p class="error">Passwords error!</p>
+        <label for="passwordCheck">Password:</label><br>
+        <input type="text" name="passwordCheck" id="passwordCheck" class="text ui-widget-content ui-corner-all"/>
+    </div>
+</div>
+</body>
+</html>

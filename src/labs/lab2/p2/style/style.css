@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font: 13px/18px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    color: #404040;
+    background: #ecedef;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+header {
+    background: #3d4144 url("../img/bg.png") 0 0 repeat;
+    border-bottom: 5px solid #ddd;
+}
+
+#logo {
+    background: url(../img/doozy-logo-middle.png) no-repeat center center;
+    height: 120px;
+    margin: 0 auto;
+    width: 120px;
+}
+
+nav {
+    height: 36px;
+    border-top: 1px solid #353939;
+    border-bottom: 1px solid #2e3131;
+    background: #464b4c linear-gradient(to bottom, #464b4c, #3f4344);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+}
+nav a {
+    transition: 0.1s ease-out;
+    transition-property: background-color, line-height;
+}
+nav ul {
+    float: left;
+    border-left: 1px solid #353939;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #4d5354;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+nav li {
+    float: left;
+}
+nav a {
+    display: block;
+    padding: 0 20px;
+    line-height: 36px;
+    color: #ddd;
+    text-decoration: none;
+    text-shadow: 0 -1px #2e3131;
+    border-left: 1px solid #4d5354;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    border-right: 1px solid #353939;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+nav a:hover {
+    background: #4d5354;
+    background: rgba(255, 255, 255, 0.05);
+}
+nav li.active a, nav li.active a:hover, nav a:active {
+    padding: 0 21px;
+    line-height: 33px;
+    color: #eee;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px solid;
+    background: #323637 linear-gradient(to bottom, #484e4f, #323637);
+    box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav li.orange a, nav li.orange a:active {
+    border-bottom-color: #ffa500;
+}
+nav li.blue a, nav li.blue a:active {
+    border-bottom-color: #48a9c0;
+}
+nav li.green a, nav li.green a:active {
+    border-bottom-color: #56c93d;
+}
+nav li.red a, nav li.red a:active {
+    border-bottom-color: #a54e49;
+}
+nav li.purple a, nav li.purple a:active {
+    border-bottom-color: #c052b9;
+}
+nav li.yellow a, nav li.yellow a:active {
+    border-bottom-color: #ffff00;
+}
+
+section {
+    width: 800px;
+    margin: 0 auto;
+}
+
+section article h1 {
+    font-size: 50px;
+    line-height: 100%;
+    padding: 10px;
+    color: green;
+}
+
+section article p {
+    font-size: 15px;
+}
+
+footer {
+    background-color: #2b2b2b;
+    width: 100%;
+    color: #868686;
+    padding: 40px 0 30px 0;
+    height: 100%;
+    margin: 50px 0 0;
+}
+
+footer #cpy {
+    width: 45%;
+    margin: 0 auto;
+}

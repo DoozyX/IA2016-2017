@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Doozy Library</title>
+
+    <script src="../jquery/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../jquery/jquery-ui.min.css">
+    <script src="../jquery/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+<div id ="content">
+    <header>
+        <h1>Doozy Library</h1>
+        <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id nulla quis odio consectetur vestibulum eu ac augue. Curabitur vulputate consequat quam nec consequat. Nam non turpis sapien. Curabitur auctor id mauris vel viverra. Pellentesque quam turpis, convallis ut placerat eu, suscipit et nisl. Sed eget risus ac arcu ullamcorper sodales. Suspendisse pretium turpis in vehicula molestie. Phasellus in tortor imperdiet, eleifend enim at, sollicitudin felis. Aliquam a elit ante. Etiam at ornare ligula. Praesent ac commodo purus, id dignissim mi. Ut pharetra tempus ante. Etiam sed odio lacinia, auctor metus faucibus, porttitor massa.</b></p>
+        <p id="buttonBox"><button id="button">Add book</button></p>
+        <div id="dialog" title="Add Book">
+            <label for="input-title">
+                <p>Enter the title of the book:</p>
+            </label>
+            <input id="input-title" type="text"/>
+            <label for="input-author">
+                <p>Enter the author of the book:</p>
+            </label>
+            <input id="input-author" type="text"/>
+            <label for="input-comment">
+                <p>Enter a comment for the book:</p>
+            </label>
+            <textarea rows="4" cols="20" name="comment" id="input-comment">Why do u recommend this book?</textarea>
+        </div>
+    </header>
+    <div id="grid">
+    </div>
+</div>
+<footer>
+    <div id="cpy">Copyright &copy 2016 Doozy</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flights v2</title>
+    <script src="../jquery/jquery.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="stylesheet" href="../jquery/jquery-ui.css">
+    <script src="../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<label for="search">Пребарај:</label>
+<br>
+<input type="text" name="search" id="search" class="text ui-widget-content ui-corner-all"/>
+<br>
+
+<label for="fromSearch">Датум од</label>
+<br>
+<input type="text" name="fromSearch" id="fromSearch"  placeholder="Click to pick date" class="text ui-widget-content ui-corner-all datepicker" />
+<br>
+<label for="toSearch">Датум до</label>
+<br>
+<input type="text" name="toSearch" id="toSearch" placeholder="Click to pick date" class="text ui-widget-content ui-corner-all datepicker"/>
+<br><br>
+
+<input type="button" id="addFlight" value="Резервирај лет"/>
+<br><br>
+
+<table id="flights">
+    <tr>
+        <th>Шифра</th>
+        <th>Авиопревозник</th>
+        <th>До</th>
+        <th>Класа</th>
+        <th>Датум од</th>
+        <th>Датум до</th>
+    </tr>
+    <tr>
+        <td>12331</td>
+        <td>Wizz Air</td>
+        <td>London</td>
+        <td>Business</td>
+        <td>11/11/2015</td>
+        <td>11/23/2015</td>
+    </tr>
+</table>
+<div id="dialog-form" title="Create new flight">
+    <p>Сите полиња се задолжителни</p>
+    <form>
+        <fieldset>
+            <label for="code">Шифра</label>
+            <br>
+            <input type="text" name="code" id="code" class="text ui-widget-content ui-corner-all"/>
+            <br>
+
+            <label for="name">Авиопревозник</label>
+            <br>
+            <input type="text" name="name" id="name"  class="text ui-widget-content ui-corner-all"/>
+            <br>
+
+            <label for="to">До</label>
+            <br>
+            <input type="text" name="to" id="to"  class="text ui-widget-content ui-corner-all"/>
+            <br>
+
+            <label for="category">Категорија</label>
+            <br>
+            <select id="category">
+                <option value="Business">Business</option>
+                <option value="Economy">Economy</option>
+                <option value="First Class">First Class</option>
+            </select>
+            <br><br>
+
+            <label for="toDate">Датум од</label>
+            <br>
+            <input type="text" name="fromDate" id="fromDate"  class="text ui-widget-content ui-corner-all datepicker"/>
+            <br>
+
+            <label for="to">Датум до</label>
+            <br>
+            <input type="text" name="toDate" id="toDate"  class="text ui-widget-content ui-corner-all datepicker"/>
+            <br>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

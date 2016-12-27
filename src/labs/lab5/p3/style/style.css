@@ -1,0 +1,87 @@
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+#feedback {
+    font-size: 1.4em;
+}
+
+.selectable .ui-selecting {
+    background: #FECA40;
+}
+
+.selectable .ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+.selectable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    display: inline-block;
+}
+
+.selectable li {
+    margin: 3px;
+    padding: 0.4em;
+    font-size: 1.4em;
+    height: 18px;
+}
+
+#btns {
+    display: inline-block;
+    top: 6px;
+    left: 555px;
+}
+
+#dest {
+    left: 600px;
+}
+
+input {
+    margin: 5px;
+    font-size: 30px;
+}
+form{
+    width: 40%;
+}
+
+input{
+    margin: 5px;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+span{
+    color: red;
+    display: none;
+}
+
+button{
+    margin-top: 5px;
+    float: left;
+}
+
+#slider{
+    height: 20px;
+    width: 250px;
+    border: 1px solid black;
+    float: left;
+    margin: 5px 10px 10px 12px;
+}
+
+#slider div{
+    width: 0%;
+    height: 20px;
+    background: lightblue;
+}

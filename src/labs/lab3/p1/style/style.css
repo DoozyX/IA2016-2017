@@ -1,0 +1,44 @@
+#memoryGame {
+    width: 500px;
+    height: 500px;
+}
+
+.memoryRow {
+    height: 20%;
+    margin-top: 15px;
+}
+
+.memoryField {
+    display: inline-block;
+    position: relative;
+    border: solid black;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+    background: linear-gradient(#1E5799, #7db9e8);
+}
+
+.memoryField p {
+    position: absolute;
+    top: -10%;
+    left:0;
+    right:0;
+    bottom: 0;
+    font-size: 40px;
+}
+
+.memoryField:nth-child(2n) {
+    border: solid red;
+}
+
+.memoryField:hover {
+    background: linear-gradient(#bace56, #73ac01);
+    color: #0b79c7;
+    cursor: pointer;
+}
+
+.selected {
+    background: linear-gradient(#7f7f7f, #808080);
+}

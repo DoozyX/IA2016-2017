@@ -1,0 +1,27 @@
+#accordion {
+    background-color: #ffcccc;
+    width: 500px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: solid grey;
+}
+
+.accordionHeader {
+    background-color: #ffffcc;
+    border: solid gray;
+    margin: 0;
+}
+
+.accordionContent {
+    background-color: #aaccff;
+    border-right: solid blue;
+    border-left: solid blue;
+    margin: 0;
+}
+
+.green {
+    background-color: #ccffcc;
+}
+h1 {
+    margin: 0;
+}

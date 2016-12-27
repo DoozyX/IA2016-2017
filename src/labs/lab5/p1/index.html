@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flights</title>
+    <script src="../jquery/jquery.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="stylesheet" href="../jquery/jquery-ui.css">
+    <script src="../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<table id="flights">
+    <tr>
+        <th>Шифра</th>
+        <th>Авиопревозник</th>
+        <th>До</th>
+        <th>Класа</th>
+    </tr>
+    <tr>
+        <td>12331</td>
+        <td>Wizz Air</td>
+        <td>London</td>
+        <td>Бизнис</td>
+    </tr>
+</table>
+<input type="button" id="addFlight" value="Додади нова ставка"/>
+<div id="dialog-form" title="Create new flight">
+    <p>Сите полиња се задолжителни</p>
+    <form>
+        <fieldset>
+            <label for="code">Шифра</label>
+            <br>
+            <input type="text" name="code" id="code" class="text ui-widget-content ui-corner-all"/>
+            <br>
+
+            <label for="name">Авиопревозник</label>
+            <br>
+            <input type="text" name="name" id="name"  class="text ui-widget-content ui-corner-all"/>
+            <br>
+
+            <label for="to">До</label>
+            <br>
+            <input type="text" name="to" id="to"  class="text ui-widget-content ui-corner-all"/>
+            <br>
+
+            <label for="category">Категорија</label>
+            <br>
+            <select id="category">
+                <option value="Бизнис">Бизнис</option>
+                <option value="Economy">Economy</option>
+                <option value="First Class">First Class</option>
+            </select>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

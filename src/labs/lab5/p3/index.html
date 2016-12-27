@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <script src="../jquery/jquery.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="stylesheet" href="../jquery/jquery-ui.css">
+    <script src="../jquery/jquery-ui.js"></script>
+</head>
+<body>
+<form>
+    <fieldset id="general">
+        <label>Name:        </label> <input type="text" placeholder="Name" id="name"> <span>Insert a name</span> <br>
+        <label>Surname:     </label> <input type="text" placeholder="Surname" id="surname"> <span>Insert a surname</span> <br>
+        <label>Password:    </label> <input type="password" placeholder="Password" id="pw"> <span>Inesrt a password</span> <br>
+        <label>DateOfBirth: </label> <input type="text" placeholder="Date of Birth" class="datepicker" id="date"> <span>Select a date</span>
+    </fieldset>
+    <fieldset id="movie">
+        <legend>Select your hobbies:</legend>
+        <ul class="selectable">
+            <li class="ui-widget-content">Gaming</li>
+            <li class="ui-widget-content">Sports</li>
+            <li class="ui-widget-content">Watching TV</li>
+            <li class="ui-widget-content">Sleeping</li>
+            <li class="ui-widget-content">Hiking</li>
+            <li class="ui-widget-content">Skiing</li>
+            <li class="ui-widget-content">Dancing</li>
+        </ul>
+    </fieldset>
+    <button>Add my info</button>
+    <div id="dialog-form" title="User Info">
+
+    </div>
+</form>
+</body>
+</html>
